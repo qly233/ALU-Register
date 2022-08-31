@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue May 24 20:12:38 2022
+# Process ID: 2844
+# Log file: D:/zuchengyuanli/ALU_jicunqi/planAhead_run_1/planAhead.log
+# Journal file: D:/zuchengyuanli/ALU_jicunqi/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/zuchengyuanli/ALU_jicunqi/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {ALU_OP[2]} {ALU_OP[1]} {ALU_OP[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {an[3]} {an[2]} {an[1]} {an[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {R_Addr_A[4]} {R_Addr_A[3]} {R_Addr_A[2]} {R_Addr_A[1]} {R_Addr_A[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {R_Addr_B[4]} {R_Addr_B[3]} {R_Addr_B[2]} {R_Addr_B[1]} {R_Addr_B[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {seg[7]} {seg[6]} {seg[5]} {seg[4]} {seg[3]} {seg[2]} {seg[1]} {seg[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {W_Addr[4]} {W_Addr[3]} {W_Addr[2]} {W_Addr[1]} {W_Addr[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {ALU_OP[2]} {ALU_OP[1]} {ALU_OP[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {R_Addr_A[4]} {R_Addr_A[3]} {R_Addr_A[2]} {R_Addr_A[1]} {R_Addr_A[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {R_Addr_B[4]} {R_Addr_B[3]} {R_Addr_B[2]} {R_Addr_B[1]} {R_Addr_B[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {W_Addr[4]} {W_Addr[3]} {W_Addr[2]} {W_Addr[1]} {W_Addr[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVCMOS18 [get_ports [list clk_s]]
+set_property iostandard LVCMOS18 [get_ports [list reset]]
+set_property iostandard LVCMOS18 [get_ports [list sw]]
+set_property iostandard LVCMOS18 [get_ports [list W]]
+set_property pulltype PULLDOWN [get_ports [list clk]]
+set_property pulltype PULLDOWN [get_ports [list clk_s]]
+set_property pulltype PULLDOWN [get_ports [list reset]]
+set_property pulltype PULLDOWN [get_ports [list sw]]
+set_property pulltype PULLDOWN [get_ports [list W]]
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin H4 [get_ports clk_s]
+endgroup
+startgroup
+set_property package_pin R4 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin AB8 [get_ports reset]
+endgroup
+set_property package_pin "" [get_ports [list  sw]]
+startgroup
+set_property package_pin T3 [get_ports {R_Addr_A[4]}]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports {R_Addr_A[3]}]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports {R_Addr_A[2]}]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports {R_Addr_A[1]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {R_Addr_A[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {R_Addr_B[4]}]]
+set_property package_pin "" [get_ports [list  {R_Addr_B[3]}]]
+startgroup
+set_property package_pin W4 [get_ports {R_Addr_B[4]}]
+endgroup
+startgroup
+set_property package_pin Y4 [get_ports {R_Addr_B[3]}]
+endgroup
+startgroup
+set_property package_pin Y6 [get_ports {R_Addr_B[2]}]
+endgroup
+startgroup
+set_property package_pin W7 [get_ports {R_Addr_B[1]}]
+endgroup
+startgroup
+set_property package_pin Y8 [get_ports {R_Addr_B[0]}]
+endgroup
+startgroup
+set_property package_pin Y7 [get_ports {W_Addr[4]}]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports {W_Addr[3]}]
+endgroup
+startgroup
+set_property package_pin U1 [get_ports {W_Addr[2]}]
+endgroup
+startgroup
+set_property package_pin U2 [get_ports {W_Addr[1]}]
+endgroup
+startgroup
+set_property package_pin W1 [get_ports {W_Addr[0]}]
+endgroup
+startgroup
+set_property package_pin W2 [get_ports sw]
+endgroup
+startgroup
+set_property package_pin Y1 [get_ports W]
+endgroup
+startgroup
+set_property package_pin AA1 [get_ports {ALU_OP[2]}]
+endgroup
+startgroup
+set_property package_pin V2 [get_ports {ALU_OP[1]}]
+endgroup
+startgroup
+set_property package_pin Y2 [get_ports {ALU_OP[0]}]
+endgroup
+startgroup
+set_property package_pin L21 [get_ports {an[3]}]
+endgroup
+startgroup
+set_property package_pin M22 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin M21 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin N22 [get_ports {an[0]}]
+endgroup
+save_constraints
+startgroup
+set_property package_pin H19 [get_ports {seg[7]}]
+endgroup
+startgroup
+set_property package_pin G20 [get_ports {seg[6]}]
+endgroup
+startgroup
+set_property package_pin J22 [get_ports {seg[5]}]
+endgroup
+startgroup
+set_property package_pin K22 [get_ports {seg[4]}]
+endgroup
+startgroup
+set_property package_pin K21 [get_ports {seg[3]}]
+endgroup
+startgroup
+set_property package_pin H20 [get_ports {seg[2]}]
+endgroup
+startgroup
+set_property package_pin H22 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin J21 [get_ports {seg[0]}]
+endgroup
+save_constraints
